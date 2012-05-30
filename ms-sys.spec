@@ -6,7 +6,7 @@ License:	GPLv2
 Group:		System/Configuration/Boot and Init 
 URL:		http://ms-sys.sourceforge.net/
 Source0:	http://dl.sf.net/ms-sys/ms-sys-%{version}.tar.gz
-BuildRequires:	bash
+Patch0:		ms-sys-2.3.0_mandir.patch
 BuildRequires:	gettext
 
 %description
@@ -18,22 +18,23 @@ written.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 %make debug \
-	SHELL="/bin/bash" \
-	PREFIX="%{_prefix}" \
 	CC="${CC:-%{__cc}}" \
 	EXTRA_CFLAGS="%{optflags} -fasm" \
 	EXTRA_LDFLAGS="%{optflags}"
 
 %install
-%makeinstall_std
+make install \
+	DESTDIR=%{buildroot} \
+	PREFIX="%{_prefix}" \
 
 %find_lang %{name}
 
 %files -f %{name}.lang
 %doc CHANGELOG CONTRIBUTORS COPYING README TODO
 %{_bindir}/ms-sys
-%doc %{_mandir}/man1/ms-sys.1*
+%{_mandir}/man1/ms-sys.1*
 
