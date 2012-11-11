@@ -1,0 +1,11 @@
+--- ms-sys-2.3.0/Makefile~	2010-05-13 21:07:51.000000000 +0000
++++ ms-sys-2.3.0/Makefile	2012-05-30 01:32:13.614162023 +0000
+@@ -33,7 +33,7 @@
+ PREFIX ?= /usr/local
+ BINDIR = $(PREFIX)/bin
+ LOCALEDIR = $(PREFIX)/share/locale
+-MANDIR = $(PREFIX)/man
++MANDIR = $(PREFIX)/share/man
+ 
+ # Where your .c-files live
+ SRC = src
