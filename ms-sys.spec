@@ -38,3 +38,10 @@ make install \
 %{_bindir}/ms-sys
 %{_mandir}/man1/ms-sys.1*
 
+
+
+%changelog
+* Wed May 30 2012 Matthew Dawkins <mattydaw@mandriva.org> 2.3.0-1
++ Revision: 801195
+- imported package ms-sys
+
