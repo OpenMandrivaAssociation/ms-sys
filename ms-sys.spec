@@ -1,7 +1,7 @@
 Summary:	Create DOS/MS-compatible boot records
 Name:		ms-sys
 Version:	2.3.0
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		System/Configuration/Boot and Init 
 URL:		http://ms-sys.sourceforge.net/
