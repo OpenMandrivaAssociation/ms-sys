@@ -18,7 +18,7 @@ written.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %make debug \
