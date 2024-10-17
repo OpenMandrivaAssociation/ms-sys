@@ -4,7 +4,7 @@ Version:	2.3.0
 Release:	2
 License:	GPLv2
 Group:		System/Configuration/Boot and Init 
-URL:		http://ms-sys.sourceforge.net/
+URL:		https://ms-sys.sourceforge.net/
 Source0:	http://dl.sf.net/ms-sys/ms-sys-%{version}.tar.gz
 Patch0:		ms-sys-2.3.0_mandir.patch
 BuildRequires:	gettext
