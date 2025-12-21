@@ -7,6 +7,7 @@ Group:		System/Configuration/Boot and Init
 URL:		https://ms-sys.sourceforge.net/
 Source0:	http://dl.sf.net/ms-sys/ms-sys-%{version}.tar.gz
 Patch0:		ms-sys-2.3.0_mandir.patch
+BuildRequires:	make
 BuildRequires:	gettext
 
 %description
